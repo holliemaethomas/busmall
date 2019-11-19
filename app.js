@@ -40,31 +40,23 @@
   new Product('water-can.jpg', 'water-can')
   new Product('wine-glass.jpg', 'wine-glass')
 
- var randomIze = function () {
-
-   Math.random() * Product.all.length;
- }
-
 var renderProducts = function () {
   
-    left.src = Product.all[0].path;
-    middle.src = Product.all[0].path;
-    right.src = Product.all[0].path;
+    left.src = allImages[Math.floor(Math.random() * allImages.length)];
+    middle.src = allImages[Math.floor(Math.random() * allImages.length)];
+    right.src = allImages[Math.floor(Math.random() * allImages.length)];
 
   } 
   
   
-  // console.log(allImages);
 
 
 renderProducts();
 
- var randomImageArray = [];
-var getrandomImage = function () {
 
-var randomImage = [Math.floor(Math.random()*allImages.length)];
-randomImageArray.push(randomImage)
-}
 
-getrandomImage();
-console.log(randomImageArray)
+
+
+
+
+
