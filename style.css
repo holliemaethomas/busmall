@@ -14,3 +14,8 @@ section ul li img {
 width: 200px;
 height: 200px;
 }
+
+#picNames {
+  position: relative;
+  margin-right: 150px;
+}
